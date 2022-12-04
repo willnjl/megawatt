@@ -1,0 +1,32 @@
+.numbered-cols{
+    @include mq('tablet-wide'){
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 3rem;
+    }
+    &__item{
+        @extend .text-ml;
+        max-width: 40rem;
+
+        @include mq('tablet-wide', max){
+            margin: 8rem auto;
+        }
+    }
+    &__num{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 12.5rem;
+        height: 12.5rem;
+        font-size: 9rem;
+        background-color: white;
+        color:white;
+        font-weight: 900;
+        /* Prefix required. Even Firefox only supports the -webkit- prefix */
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: color('secondary');
+        border-radius: 100%;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,9 @@
+.grid {
+  // Fallback
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}

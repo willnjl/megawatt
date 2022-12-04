@@ -1,0 +1,93 @@
+$colors: (
+  "white": white,
+  "primary": #9F1F30,
+  "secondary": #2A6B97,
+  "text": #181818,
+  "black": #181818,
+  // Game Colors
+  "grey": #F0F4F5,
+  "tech": #f6f6f6,
+  "power": #018237,
+  "impact": #d62222,
+  "coin": #F1A72F,
+  "biomass-light": #c65519,
+  "biomass-dark": #8f3219,
+  "coal-light": #4e4d4d,
+  "coal-dark": #333333,
+  "gas-light": #b23720,
+  "gas-dark": #822114,
+  "hydro-light": #42418d,
+  "hydro-dark": #2c2e6c,
+  "nuclear-light": #4f8431,
+  "nuclear-dark": #1f5f2b,
+  "solar-light": #f3a815,
+  "solar-dark": #c08111,
+  "wind-light": #4593d0,
+  "wind-dark": #2a6b97,
+  "upgrade": #3c3c3b,
+  "upgrade-light": #6f4694,
+  "upgrade-dark": #4f3672,
+  "action": #054065,
+  "action-light": #18588f,
+  "action-dark": #054065,
+  "event": #d62222,
+  "event-light": #c5233b,
+  "event-dark": #9f1f30,
+
+);
+
+
+
+
+$font-family-sans-serif: "Proxima Vara", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base: $font-family-sans-serif;
+
+// Game colors
+
+
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+
+
+$wrap-width-large: 1350px;
+$wrap-width-small: 1200px;
+$nav-height: 95px;
+
+/**
+Media Queries
+*/
+$breakpoints: (
+  "phone": 400px,
+  "phone-wide": 480px,
+  "phablet": 560px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "tablet-wide": 1024px,
+  "desktop": 1248px,
+  "desktop-wide": 1600px
+);
+
+$text-head: 6rem;
+$text-2xl: 5rem;
+$text-xl: 4rem;
+$text-l: 3rem;
+$text-ml: 2.25rem;
+$text-n: 1.8rem;
+$text-s: 1.5rem;
+$line-height: 2.75rem;
+
+$font-primary: $font-family-base; //, Helvetica, arial, sans-serif;
+$font-secondary: $font-family-monospace;
+
+:root {
+  background-color: black;
+}

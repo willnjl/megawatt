@@ -1,0 +1,101 @@
+html {
+  font-size: 62.5%;
+  line-height: $line-height;
+}
+
+
+body {
+  font-size: 1.6rem;
+  color: color('text');
+  font-weight: 600;
+  font-family: $font-primary;
+}
+
+
+h1,
+.text-head,
+h2,
+.text-2xl,
+h3,
+.text-xl {
+  font-size: $text-l;
+  line-height: 4.5rem;
+}
+
+h4,
+.text-l {
+  font-size: $text-ml;
+  line-height: 3.9rem;
+}
+
+h5,
+.text-ml,
+h6,
+.text-n {
+  font-size: $text-n;
+  line-height: $line-height;
+}
+
+
+.text-s {
+  font-size: $text-s;
+  line-height: 2.5rem;
+}
+
+@include mq('phablet') {
+
+  h1,
+  .text-head,
+  h2,
+  .text-2xl,
+  h3,
+  .text-xl {
+    font-size: $text-xl;
+    line-height: 6.5rem;
+  }
+}
+
+
+@include mq('tablet-wide') {
+
+  body {
+    font-size: 1.7rem;
+  }
+
+  h1,
+  .text-head {
+    line-height: 8.8rem;
+    font-size: $text-head;
+  }
+
+  h2,
+  .text-2xl {
+    font-size: $text-2xl;
+    line-height: 6.2rem;
+  }
+
+  h3,
+  .text-xl {
+    font-size: $text-xl;
+    line-height: 6.3rem;
+  }
+
+  h4,
+  .text-l {
+    line-height: 4.5rem;
+    font-size: $text-l;
+    line-height: 4.5rem;
+  }
+
+  h5,
+  .text-ml {
+    font-size: $text-ml;
+    line-height: 3rem;
+  }
+
+  h6,
+  .text-n {
+    font-size: $text-n;
+    line-height: $line-height;
+  }
+}

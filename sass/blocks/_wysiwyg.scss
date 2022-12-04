@@ -1,0 +1,49 @@
+.wyg {
+  ul {
+    margin: 1rem 0 2rem 0;
+  }
+
+  a,
+  a:visited {
+    color: color('primary');
+  }
+
+
+  b h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+
+    margin-bottom: 4rem;
+  }
+
+  ol {
+
+    &,
+    li {
+      list-style: decimal;
+    }
+  }
+
+  p {
+    line-height: inherit;
+  }
+
+  blockquote {
+    @extend .text-ml;
+    font-weight: 400;
+    padding-left: 4rem;
+    border-left: 1rem solid color('primary');
+    margin: 4rem 0;
+  }
+
+  p,
+  blockquote {
+    margin-bottom: 2rem;
+  }
+}

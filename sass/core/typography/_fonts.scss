@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Proxima Vara';
+    font-weight: 100 900;
+    font-stretch: 25% 150%;
+    src: local("Proxima Vara"),
+        url('/fonts/vendor/proxima_vara/proxima_vara.woff2') format('woff2 supports variations'),
+        url('/fonts/vendor/proxima_vara/proxima_vara.woff2') format('woff2-variations');
+    font-display: swap;
+}

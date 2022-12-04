@@ -1,0 +1,72 @@
+@include mq("desktop", max) {
+  .row-l {
+    &>.col {
+      margin-right: 0;
+
+      &.text-right {
+        text-align: left;
+      }
+
+      &.double-gutter {
+        margin-bottom: 8rem;
+      }
+
+      &.gutter {
+        margin-bottom: 4rem;
+      }
+
+      &.half-gut {
+        margin-bottom: 2rem;
+      }
+    }
+
+  }
+}
+
+@include mq("tablet-wide", max) {
+  .row-m {
+    &>.col {
+      margin-right: 0;
+
+      &.text-right {
+        text-align: left;
+      }
+
+      &.double-gutter {
+        margin-bottom: 8rem;
+      }
+
+      &.gutter {
+        margin-bottom: 4rem;
+      }
+
+      &.half-gut {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+@include mq("phablet", max) {
+  .row-s {
+    &>.col {
+      margin-right: 0;
+
+      &.text-right {
+        text-align: left;
+      }
+
+      &.double-gutter {
+        margin-bottom: 8rem;
+      }
+
+      &.gutter {
+        margin-bottom: 4rem;
+      }
+
+      &.half-gut {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

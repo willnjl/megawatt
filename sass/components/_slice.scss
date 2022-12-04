@@ -1,0 +1,40 @@
+@mixin slice($color: "white"){
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: color($color);
+        transform-origin: top left;
+        transform: skewY(-2deg); z-index: -1;
+    }
+    &::after{
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: color($color);
+        transform-origin: bottom left;
+        transform: skewY(1deg);
+        z-index: -1;
+    }
+}
+
+.slice{
+    position: relative;
+    @include slice('white')
+}
+
+.slice.bg-primary{
+    @include slice('primary')
+}
+.slice.bg-secondary{
+    @include slice('secondary')
+}
+
+
+

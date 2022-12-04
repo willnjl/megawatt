@@ -1,0 +1,50 @@
+.accordion{
+    &__btn{
+        @extend .text-l;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background: transparent;
+        color: color('primary');
+        font-weight: 600;
+        border: 0;
+        padding: 2rem 0;
+        
+        &:not(:first-child){
+            border-top: 1px solid rgba($color: #000000, $alpha: 0.2);
+        }
+        
+        i{
+            transform: rotate(45deg);
+            transition: 0.2s ease-out;
+        }
+        
+        
+        &.active{
+            color: color('impact');
+            i{
+                transform: rotate(0deg);
+            }
+        }
+        
+        
+        &:hover{
+            transition: color 0.1s ease-out;
+            color: color('impact');
+        }
+    }
+
+
+    &__panel{
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+
+        p{
+            @extend .text-ml;
+            padding: 2rem 0 4rem 0;
+        }
+    }
+}

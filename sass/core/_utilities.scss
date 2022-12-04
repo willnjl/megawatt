@@ -1,0 +1,58 @@
+.test {
+  border: 1px solid red;
+}
+
+.rel {
+  position: relative;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+
+.s-show {
+  @include show("phablet");
+}
+
+.m-show{
+  @include show("tablet");
+}
+
+.l-show{
+  @include show("desktop");
+}
+
+.s-hide {
+  @include hide("phablet");
+}
+
+.m-hide{
+  @include hide("tablet");
+}
+
+.l-hide{
+  @include hide("desktop");
+}
+
+
+

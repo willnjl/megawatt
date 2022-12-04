@@ -1,0 +1,98 @@
+
+.row-m,
+.row-s,
+.row-l,
+.row-xl {
+  display: block;
+}
+
+.row,
+.flex{
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-sb {
+  justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.flex-4 {
+  flex: 4;
+}
+
+@include mq("desktop-wide") {
+  .row-xl {
+    display: flex;
+
+    &.row-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+@include mq("desktop") {
+  .row-l {
+    display: flex;
+
+    &.row-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+@include mq("tablet-wide") {
+  .row-m {
+    display: flex;
+
+    &.row-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+@include mq("tablet") {
+  .row-s {
+    display: flex;
+
+    &.row-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.site-footer{
+    background-color: color('primary');
+    color: white;
+    text-align: center;
+    &__form{
+        max-width: 52rem;
+        margin: 0 auto;
+    }
+
+    &__logo{
+        max-width: 30rem;
+    }
+
+    input[type="email"]{
+        border-radius: 5px 0px 0px 5px;
+    }
+    .btn-submit{
+        background-color: color('grey');
+        color: color('primary');
+        border-radius: 0px 5px 5px 0px;
+    }
+}

@@ -1,0 +1,44 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-autoplay {
+  .swiper-wrapper {
+    -webkit-transition-timing-function: linear !important;
+    -o-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+  }
+}
+
+
+.swiper-cards{
+  .swiper-slide{
+    width: 32rem;
+    @include mq('desktop'){
+      width: 42rem;
+    }
+  }
+}
+
+
+.swiper-stem{
+  .swiper-slide{
+    width: 45rem;
+    padding: 4rem;
+    background-color: white;
+    border-radius: 5px;
+    img{
+      max-width: 25rem;
+      margin: auto;
+      display: block;
+      margin-bottom: 4.3rem;
+    }
+  }
+}
+
+.swiper-testimonial{
+  ul li{
+    margin-bottom: 2rem;
+  }
+}

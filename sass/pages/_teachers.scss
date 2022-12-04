@@ -1,0 +1,11 @@
+.teachers{
+    .accordion{
+        &__btn{
+            color: color('secondary');
+
+            &:hover, &.active{
+                color: color('wind-light');
+            }
+        }
+    }
+}

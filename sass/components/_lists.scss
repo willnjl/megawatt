@@ -1,0 +1,37 @@
+.list-dot {
+  color: black;
+  li {
+    display: inline-block;
+  }
+  li:before {
+    content: "\00a0\2022\00a0\00a0";
+    color: black;
+  }
+  li:first-child:before {
+    content: "";
+  }
+}
+
+.list-breadcrumb {
+  padding-bottom: 1rem;
+  li {
+    display: inline-block;
+    font-weight: 400;
+    line-height: $line-height;
+    font-size: 1rem;
+
+    a {
+      color: color('primary');
+    }
+    &::before {
+      content: "\00B7";
+      display: inline-block;
+      font-weight: 900;
+      margin: 0 0.15rem;
+    }
+    &:first-child::before {
+      content: "";
+      display: none;
+    }
+  }
+}

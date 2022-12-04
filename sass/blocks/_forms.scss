@@ -1,0 +1,29 @@
+input, select, textarea{
+    font-family: inherit;
+}
+input{
+    &:not([type="checkbox"]){
+        &, select,textarea{
+            padding: 2rem;
+            border: 0;
+            border-radius: 5px;
+            width: 100%;
+            background-color: color('grey');
+        }
+        height: 5.5rem;
+        font-size: $text-ml;
+        height: 5rem;
+    }
+}
+
+.form-contact{
+    color: black;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+
+
+    @include mq('tablet-wide'){
+        padding: 6rem;
+    }
+}

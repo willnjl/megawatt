@@ -1,0 +1,83 @@
+
+
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+
+        @if $type ==max {
+            $width: $width - 1px;
+        }
+
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+
+    @else {
+        @if $type ==max {
+            $width: $width - 1px;
+        }
+
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+
+/*
+    CSS Trucate
+*/
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*
+    Aspect Ratio
+*/
+
+@mixin ratio($x, $y, $pseudo: false) {
+    $padding: unquote(($y / $x ) * 100 + '%');
+    
+    @if $pseudo {
+        &:before {
+            @include pseudo($pos: relative);
+            width: 100%;
+            padding-top: $padding;
+        }
+    }
+    
+    @else {
+        padding-top: $padding;
+    }
+}
+
+
+
+/*
+   Absolute position
+*/
+@mixin abs-position ($top, $right, $bottom, $left) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+
+@mixin show($breakpoint){
+    @include mq($breakpoint, max){
+        display: none !important;
+    }
+}
+
+@mixin hide($breakpoint){
+    @include mq($breakpoint){
+        display: none !important;
+    }
+}

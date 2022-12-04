@@ -1,0 +1,35 @@
+.w-100{
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+
+.w-half {
+  width: 90%;
+}
+
+
+@include mq('tablet'){
+  .w-75{
+    width: 90%;
+  }
+  .w-90{
+    width: 90%;
+  }
+  .w-half {
+    width: 75%;
+  }
+}
+
+
+
+@include mq("desktop"){
+  .w-75{
+    width: 75%;
+  }
+  .w-half {
+    width: 50%;
+  }
+  
+}

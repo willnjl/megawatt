@@ -1,0 +1,46 @@
+.wrap {
+  max-width: $wrap-width-large;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrap-tight {
+  max-width: $wrap-width-small;
+  margin: 0 auto;
+  position: relative;
+}
+
+section,
+footer,
+.padding {
+  padding: 12rem 1rem;
+}
+
+.header-pad {
+  padding: 2rem 1rem;
+}
+
+@include mq("tablet") {
+
+  section,
+  footer,
+  .padding {
+    padding: 8rem 4vw 8rem 4vw;
+  }
+
+  .header-pad {
+    padding: 2rem 4vw;
+  }
+}
+
+@include mq("desktop") {
+  .header-pad {
+    padding: 2rem 6vw;
+  }
+
+  section,
+  footer,
+  .padding {
+      padding: 8rem 6vw 12rem 6vw;
+  }
+}

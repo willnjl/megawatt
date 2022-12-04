@@ -1,0 +1,32 @@
+.bb-fair{
+    &__heading{
+        margin-bottom: 5rem;
+    }
+    &__item{
+        margin-bottom: 3rem;
+    }
+    @include mq('tablet'){
+        &__heading{
+            text-align: center;
+            margin-bottom: 10rem;
+        }
+        &__item{
+            margin-bottom: 0;
+        }
+        &__grid{
+            align-items: center;
+            display: grid;
+            grid-auto-flow: dense;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 4vw;
+        }
+    }
+
+
+    &__item{
+        img{
+            border-radius: 5rem;
+            overflow: hidden;
+        }
+    }
+}

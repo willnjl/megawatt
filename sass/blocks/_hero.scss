@@ -1,0 +1,12 @@
+.hero {
+  height: 85vh;
+  min-height: 55rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__logo{
+    width: 53rem;
+    max-width: 90vw;
+  }
+}

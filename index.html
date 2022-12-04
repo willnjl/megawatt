@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="js/dist/all.min.js" defer></script>
+  </head>
+  <body class="home">
+    <header class="site-header header-pad">
+      <a href="/" class="site-branding">
+        <img src="assets/images/logo.png" alt="logo" />
+      </a>
+      <div class="overlay">
+        <img
+          data-src="assets/images/bg-white.jpg"
+          alt="lightning"
+          class="overlay__bg lozad bg-img"
+        />
+        <ul class="site-navigation">
+          <li class="menu-item menu-item--current">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="teachers.html">Teachers</a>
+          </li>
+          <li class="menu-item">
+            <a href="employers.html">Employers</a>
+          </li>
+          <li class="menu-item--highlight">
+            <a
+              target="_blank"
+              href="https://curieusgames.myshopify.com/cart/39388475916360:1?channel=buy_button"
+              class="btn btn-coin"
+            >
+              PLAY NOW
+            </a>
+          </li>
+        </ul>
+      </div>
+      <button class="hamburger hamburger--squeeze" type="button" id="navicon">
+        <div class="container">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </div>
+      </button>
+    </header>
+    <!-- Hero -->
+    <section class="hero jarallax">
+      <img
+        src="/assets/images/hero-bg.png"
+        alt="Megawatt world"
+        class="jarallax-img"
+      />
+      <img src="assets/images/hero.png" alt="MEGAWATT" class="hero__logo" />
+    </section>
+    <!-- Intro Text -->
+    <section class="slice">
+      <div class="wrap-tight text-center">
+        <h1 class="mb-2 fade fade-in">DISCOVER ENERGY!</h1>
+        <p class="text-xl font-bold fade fade-in">
+          Megawatt is a card game that challenges you to build an electricity
+          grid.
+        </p>
+      </div>
+    </section>
+    <!-- Shop -->
+    <section class="shop" id="shop">
+      <div class="wrap">
+        <div class="row-s align-center">
+          <div class="flex-1 col mr-2 double-gutter">
+            <div class="fade fade-in swipe-left">
+              <img
+                data-src="/assets/images/shop-deck.png"
+                alt="Deck of cards"
+                class="lozad"
+              />
+            </div>
+          </div>
+          <div class="flex-1 col text-center">
+            <a
+              class="btn btn-primary mb-3 block w-100"
+              id="shop-buy"
+              target="_blank"
+              href="https://curieusgames.myshopify.com/cart/39388475916360:1?channel=buy_button"
+              >Buy now | £<span id="shop-price">20</span></a
+            >
+            <div class="flex align-center justify-center">
+              <button class="btn btn-shop" id="shop-increment">
+                <i class="fa fa-plus"></i>
+              </button>
+              <span
+                class="text-head font-bold px-5 py-4 block"
+                id="shop-quantity"
+                >1</span
+              >
+              <button class="btn btn-shop" id="shop-decrement">
+                <i class="fa fa-minus"></i>
+              </button>
+            </div>
+            <p class="text-ml font-bold">
+              Ages: 10+ | Players: 2-5 | Minutes: 30+ | Cards: 142 <br />
+              For non-commericial use.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Video Block -->
+    <section>
+      <div class="wrap text-center mb-10">
+        <p class="text-head font-bold fade-stagger">
+          Build a grid that balances
+          <span class="text-power fade fade-in">POWER</span> and
+          <span class="text-impact fade fade-in">IMPACT</span>. You have limited
+          <span class="text-coin fade fade-in">COIN</span> to spend.
+        </p>
+      </div>
+      <div class="wrap-tight">
+        <div class="videoWrapper">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/SBeLOFk8aCQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Card Carousel -->
+    <section class="rel">
+      <div class="wrap text-center mb-8">
+        <h3 class="text-head">
+          Supply <span class="text-power fade fade-in">POWER</span> with Tech
+          Cards
+        </h3>
+      </div>
+      <img
+        data-src="assets/images/bg-white.jpg"
+        alt="lightning"
+        class="lozad bg-img"
+      />
+      <div class="swiper-container swiper-cards swiper-autoplay">
+        <ul class="swiper-wrapper">
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/biomass.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/coal.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/gas.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/nuclear.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/solar.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/wind.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- upgrade -->
+    <section class="rel">
+      <div class="wrap text-center mb-8">
+        <h3 class="text-head">
+          Improve your grid using
+          <span class="text-upgrade-light fade fade-in">Upgrade</span> Cards.
+        </h3>
+      </div>
+      <div class="swiper-container swiper-cards swiper-autoplay">
+        <ul class="swiper-wrapper">
+          <!-- uprade -->
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/advanced_nuclear.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/carbon_capture.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/concentrated_solar.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/grid_battery.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/hydrogen.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/interconnector.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/offshore_wind.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+          <li class="swiper-slide">
+            <img
+              data-src="assets/cards/pumped_hydro.png"
+              alt="Tech Card"
+              class="lozad"
+            />
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- Action Card -->
+    <section class="rel">
+      <img
+        data-src="assets/images/bg-white.jpg"
+        alt="lightning"
+        class="lozad bg-img"
+      />
+      <div class="wrap">
+        <div class="row-s align-center row-reverse">
+          <div
+            class="flex-2 col flex align-center text-center double-gutter padding"
+          >
+            <p class="text-xl font-bold fade fade-in swipe-right">
+              Boost your hand or mess with other players with Action Cards.
+            </p>
+          </div>
+          <div class="col flex-1">
+            <div class="fade fade-in swipe-left">
+              <img
+                data-src="assets/action_forecast.png"
+                alt=""
+                srcset=""
+                class="lozad"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Event Card -->
+    <section class="rel">
+      <img
+        data-src="assets/images/bg-white.jpg"
+        alt="lightning"
+        class="lozad bg-img"
+      />
+      <div class="wrap">
+        <div class="row-s align-center">
+          <div
+            class="flex-2 col flex align-center text-center padding double-gutter"
+          >
+            <p class="text-xl font-bold fade fade-in swipe-left">
+              Boost your hand or mess with other players with Action Cards.
+            </p>
+          </div>
+          <div class="col flex-2">
+            <div class="fade fade-in swipe-right">
+              <img
+                data-src="assets/event_energy_revolution.png"
+                alt=""
+                srcset=""
+                class="lozad"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <!-- CTA buttons -->
+    <section class="cta">
+      <div class="wrap">
+        <div class="cta__row">
+          <div class="cta__link clickable btn-secondary">
+            <h5 class="cta__head">Teachers</h5>
+            <p class="cta__content">
+              Find out about using Megawatt in your classroom
+              <a href="#">here</a>
+            </p>
+          </div>
+          <div class="cta__link clickable btn-primary">
+            <h5 class="cta__head">Employers</h5>
+            <p class="cta__content">
+              Find out about STEM Outreach
+              <a href="#">here</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- accordion -->
+    <section>
+      <div class="wrap-tight">
+        <div class="accordion">
+          <button class="accordion__btn">
+            What happens when I buy Megawatt? <i class="fa fa-times"></i>
+          </button>
+          <div class="accordion__panel">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              accusamus iste cumque, corrupti fugit beatae doloremque minus ut?
+              Consequatur distinctio dolore deleniti exercitationem minus unde
+              optio voluptatum? Numquam, architecto quisquam.
+            </p>
+          </div>
+          <button class="accordion__btn">
+            What happens when I buy Megawatt? <i class="fa fa-times"></i>
+          </button>
+          <div class="accordion__panel">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              accusamus iste cumque, corrupti fugit beatae doloremque minus ut?
+              Consequatur distinctio dolore deleniti exercitationem minus unde
+              optio voluptatum? Numquam, architecto quisquam.
+            </p>
+          </div>
+          <button class="accordion__btn">
+            What happens when I buy Megawatt? <i class="fa fa-times"></i>
+          </button>
+          <div class="accordion__panel">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              accusamus iste cumque, corrupti fugit beatae doloremque minus ut?
+              Consequatur distinctio dolore deleniti exercitationem minus unde
+              optio voluptatum? Numquam, architecto quisquam.
+            </p>
+          </div>
+          <button class="accordion__btn">
+            What happens when I buy Megawatt? <i class="fa fa-times"></i>
+          </button>
+          <div class="accordion__panel">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              accusamus iste cumque, corrupti fugit beatae doloremque minus ut?
+              Consequatur distinctio dolore deleniti exercitationem minus unde
+              optio voluptatum? Numquam, architecto quisquam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="wrap-tight text-center">
+        <h6 class="text-head font-bold mb-2">
+          CONNECT TO OUR GRID
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="currentcolor"
+            class="bi bi-lightning-charge"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.251.068a.5.5.0 01.227.58L9.677 6.5H13a.5.5.0 01.364.843l-8 8.5a.5.5.0 01-.842-.49L6.323 9.5H3a.5.5.0 01-.364-.843l8-8.5a.5.5.0 01.615-.09zM4.157 8.5H7a.5.5.0 01.478.647L6.11 13.59l5.732-6.09H9a.5.5.0 01-.478-.647L9.89 2.41 4.157 8.5z"
+            ></path>
+          </svg>
+        </h6>
+        <form
+          class="site-footer__form"
+          name="newsletter"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="lightsOut"
+        >
+          <div class="d-none" aria-hidden="true" style="visibility: hidden">
+            <label for="lightsOut">Power cut</label>
+            <input id="lightsOut" name="lightsOut" />
+          </div>
+          <div class="flex">
+            <input
+              required
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Email address"
+            />
+            <button class="btn btn-submit" type="submit">Sign up</button>
+          </div>
+        </form>
+        <p class="text-l font-bold py-4">
+          We'll let you know when something interesting happens and we won't
+          share your email.
+        </p>
+        <img
+          data-src="/assets/images/curious.png"
+          alt="curios games"
+          class="lozad site-footer__logo"
+        />
+
+        <ul class="text-n">
+          <li>© 2022 CURIEUS GAMES LTD,</li>
+          <li>
+            <address>206 Upper Richmond Road West, London, SW14</address>
+          </li>
+          <li>| Company number: 12166476</li>
+        </ul>
+        <p class="text-n"></p>
+      </div>
+    </footer>
+  </body>
+</html>
