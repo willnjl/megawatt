@@ -1,13 +1,15 @@
 ((d, w) => {
   [].forEach.call(d.querySelectorAll(".swiper-cards"), (node) => {
     let swiper = new Swiper(node, {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
+      centeredSlides: true,
       spaceBetween: 20,
       loop: true,
       breakpoints: {
         550: {
           slidesPerView: "auto",
           loop: false,
+          centeredSlides: false,
         },
       },
     });
