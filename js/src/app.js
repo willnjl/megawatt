@@ -37,34 +37,4 @@
     speed: 0.1,
     zIndex: -100,
   });
-
-  // Lightboxes
-  [].forEach.call(d.querySelectorAll(".lightbox-container"), (container) => {
-    const templateSelctor = ".lightbox-template";
-    const template = container.querySelector(templateSelctor);
-
-    if (template) {
-      const lightbox = basicLightbox.create(template);
-      const btnSelector = ".btn-play";
-      const button = container.querySelector(btnSelector);
-
-      if (button) {
-        button.addEventListener("click", () => {
-          lightbox.show();
-          let handleEsc = d.addEventListener("keydown", (e) => {
-            if (e.key === "Escape") {
-              lightbox.close();
-              d.removeEventListener("keydown", handleEsc);
-            }
-          });
-        });
-      } else {
-        console.log("no button");
-        return;
-      }
-    } else {
-      console.log(templateSelctor + " not found");
-      return;
-    }
-  });
 })(document, window);
